@@ -1,5 +1,5 @@
 ---
-- hosts: local
+- hosts: all
   roles:
   - awxpresetup
   - {role: check_vars}
