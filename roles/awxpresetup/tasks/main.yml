@@ -51,6 +51,7 @@
   git:
     repo: https://github.com/ansible/awx.git
     dest: /root/awx
+    force: yes
     depth: 50
 - name: copy inventory file
   copy:
