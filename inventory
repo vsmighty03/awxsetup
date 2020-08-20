@@ -1,2 +1,2 @@
-localhost ansible_connection=local
+ip-172-31-21-146.us-west-2.compute.internal
 
