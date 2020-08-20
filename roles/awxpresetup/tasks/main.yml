@@ -16,6 +16,7 @@
     state: present
 - name: Update apt and install docker-ce
   apt: update_cache=yes name=docker-ce state=latest
+  
 - name: "set the ansible repo"
   apt_repository:
     repo: "ppa:ansible/ansible"
@@ -36,10 +37,6 @@
   npm:
     name: "npm"
     global: yes
-
-- name: install pip updated version
-  pip:
-    name: pip
 
 - name: install pip packages
   pip:
