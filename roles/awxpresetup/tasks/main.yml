@@ -59,5 +59,7 @@
 - name: copy inventory file
   copy:
     src: inventory
-    dest: /root/awx/installer/inventory
+    dest: /root/awxsetup/inventory
+- name: Move role directory contents
+  command: cp -r /root/awx/installer/roles/* /root/awxsetup/roles/    
 
