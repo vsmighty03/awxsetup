@@ -1,5 +1,1 @@
-[local]
 localhost ansible_connection=local
-
-[webserver]
-10.0.0.7
