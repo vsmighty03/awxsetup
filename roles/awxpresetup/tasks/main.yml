@@ -52,6 +52,8 @@
     repo: https://github.com/ansible/awx.git
     dest: /root/awx
     depth: 50
-- name: Move role directory contents
-  command: cp -r /root/awx/installer/roles/* /root/awxsetup/roles/    
+- name: copy inventory file
+  copy:
+    src: inventory
+    dest: /root/awx/installer/inventory    
 
