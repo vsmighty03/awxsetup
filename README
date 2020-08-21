@@ -1,3 +1,13 @@
+machien req:
+  1. ubuntu 18
+  2. 2 cpu core, 4GB RAM
+  3. install ansoible package:
+  
+    sudo apt-get install software-properties-common  && \
+  sudo apt-add-repository ppa:ansible/ansible && \
+  sudo apt-get update && \
+ sudo apt-get install ansible
+
 git clone https://github.com/vytec-co/awxsetup.git
 cd awxsetup
 ./setup.sh
